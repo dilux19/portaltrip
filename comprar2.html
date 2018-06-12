@@ -1,0 +1,42 @@
+<html>
+<title> PortalTrip </title>
+<head>
+<link rel="stylesheet" type="text/css" href="estilo2.css">
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id="banner"></div>
+	<div class="menu" id="m1" style="background-color: #474747">
+		<h3 style="color: white">COMPRAR</h3>
+	</div>
+	<a class="amenu" href="tusviajes.html"><div class="menu" id="m2">
+		<h3>MIS VIAJES</h3>
+	</div></a>
+	<a class="amenu" href="amigos.html"><div class="menu" id="m3">
+		<h3>AMIGOS</h3>
+	</div></a>
+	
+	<div id="cuerpo">
+		
+		<h2> EGIPTO </h2>
+		
+		<div class="image" id="img1">
+		</div>		
+
+		<p> Fecha inicio </p>
+		<input type="text" value="20/07/2018" disabled="disabled">
+		<p>Fecha fin</p>
+		<input type="text" value="27/07/2018" disabled="disabled">
+		<p> Precio: 200&euro; </p>
+		<div id="buy2">COMPRAR</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#buy2').click(function(){
+			alert("Viaje comprado correctamente");
+		});
+	});
+</script>
